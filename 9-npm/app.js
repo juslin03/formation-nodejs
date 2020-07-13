@@ -1,6 +1,6 @@
 const validator = require("validator");
 
-const tableau = [
+const emails = [
   "contact@email.com",
   "juslin",
   "kouadio@c.ci",
@@ -8,7 +8,7 @@ const tableau = [
   "1234",
 ];
 
-for (let index = 0; index < tableau.length; index++) {
-  const result = validator.isEmail(tableau[index]) ? "OK" : "KO";
-  console.log(`${tableau[index]}: ${result}`);
+for (let index = 0; index < emails.length; index++) {
+  const result = validator.isEmail(emails[index]) ? "OK" : "KO";
+  console.log(`${emails[index]}: ${result}`);
 }
